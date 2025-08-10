@@ -1,6 +1,7 @@
 package com.savingszon.application
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.webkit.WebView
@@ -15,6 +16,11 @@ import android.webkit.WebResourceRequest
 class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        // Nothing here — WebView stays intact
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

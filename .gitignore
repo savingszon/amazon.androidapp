@@ -24,3 +24,5 @@ local.properties
 .idea/misc.xml
 .idea/runConfigurations.xml
 .kotlin/errors/errors-1752003401495.log
+/app/release
+.idea/vcs.xml
